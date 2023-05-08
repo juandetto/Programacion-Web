@@ -146,7 +146,7 @@ img.logo-footer{
     white-space: nowrap;
     color: #eee;
     text-decoration: none;
-    margin-left: 25%;
+    text-align: center;
     margin-top: 10%;
 }
 
@@ -157,6 +157,38 @@ img.logo-footer{
     margin-left: 4.6%;
     margin-top: 1.7%;
     text-decoration: none;
+}
+
+.community-info-container{
+    text-align: center;
+}
+
+.about-us-info-container{
+    text-align: center;
+}
+
+.community-info{
+    display: block;
+    color: #eee;
+    font-size: smaller;
+    margin-top: 4%;
+    text-decoration: none;
+}
+
+.community-info:hover{
+    color: #ccc;
+}
+
+.about-us-info{
+    display: block;
+    color: #eee;
+    font-size: smaller;
+    margin-top: 4%;
+    text-decoration: none;
+}
+
+.about-us-info:hover{
+    color: #ccc;
 }
 
 main-1{
