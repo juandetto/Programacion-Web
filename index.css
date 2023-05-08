@@ -90,10 +90,12 @@ button.navbar-toggler{
 
 .nav-link{
     color: #222;
+    
 }
 
 a.nav-link:hover{
     color: #0d6efd;
+    border-bottom: #0d6efd;
 }
 
 @media (min-width: 768px) {
@@ -108,13 +110,27 @@ li.nav-item a.dropdown-item:hover{
 }
 
 .footer{
-    color: red;
     position: absolute;
     height: 200px;
     width: 100%;
+    margin: 0%;
     left: 0px;
     bottom: 0px;
     background-color: #333;
+}
+
+@media (max-width: 576px){
+    .footer{
+        position: absolute;
+    height: 310px;
+    width: 100%;
+    margin: 0%;
+    left: 0px;
+    bottom: 0px;
+    background-color: #333;
+    }
+}
+    
 }
 
 .about-us-footer{
@@ -189,6 +205,7 @@ img.logo-footer{
 
 .about-us-info:hover{
     color: #ccc;
+    
 }
 
 main-1{
