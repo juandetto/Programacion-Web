@@ -2,9 +2,12 @@
 body{
     background-color: #eee;
 }
+
 .navbar{
  width: 100%;
+ top: 0;
  position: fixed;
+ z-index: 999;
  margin-top: 0px;
  left: 0px;
  padding-left: 2%;
@@ -12,8 +15,8 @@ body{
 
 .navbar-brand{
     color: #0d6efd;
-    font-weight: 650;
-    letter-spacing: 0.07em;
+    font-weight: 700;
+    letter-spacing: 0.08em
 }
 
 .nav-item{
@@ -114,8 +117,9 @@ li.nav-item a.dropdown-item:hover{
     height: 200px;
     width: 100%;
     margin: 0%;
+    top: 900px;
     left: 0px;
-    bottom: 0px;
+    bottom: 0;
     background-color: #333;
 }
 
@@ -129,8 +133,6 @@ li.nav-item a.dropdown-item:hover{
     bottom: 0px;
     background-color: #333;
     }
-}
-    
 }
 
 .about-us-footer{
@@ -208,7 +210,64 @@ img.logo-footer{
     
 }
 
-main-1{
-    background-color: aqua;
-    height: 30%;
+.main-1{
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 9.4%;
+    left: 0px;
 }
+
+span.carousel-control-next-icon.ccni{
+    color: #222;
+}
+
+button.carousel-control-prev{
+    color: #222;
+}
+
+h1.primer-carousel{
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+img.un-click-foto{
+    width: 45%;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 11%;
+
+}
+
+h1.segundo-carousel{
+    text-align: center;
+    display: inline-block;
+    margin-left: 15%;
+    border-color: #fff;
+    margin-top: 5%;
+}
+
+img.tus-inversiones{
+    width: 45%;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 11%; 
+}
+
+.main-2{
+    display: block;
+    position: absolute;
+    top: 500px;
+}
+
+.cards-plan{
+    display: flex;
+    position: absolute;
+    width: 90%;
+    top: 570px;
+    margin-left: -2.3%;
+}
+
