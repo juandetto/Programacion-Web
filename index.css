@@ -1,6 +1,7 @@
 /* nombreelemento{propiedad1: valor; propiedad2: valor;} */
 body{
     background-color: #eee;
+    height: 2000px;
 }
 
 .navbar{
@@ -117,7 +118,7 @@ li.nav-item a.dropdown-item:hover{
     height: 200px;
     width: 100%;
     margin: 0%;
-    top: 900px;
+    top: 1800px;
     left: 0px;
     bottom: 0;
     background-color: #333;
@@ -249,12 +250,11 @@ h1.primer-carousel{
     margin-top: 5%;
 }
 
-img.un-click-foto{
+img.imagen-primer-carousel{
     width: 45%;
     height: auto;
     display: inline-block;
     margin-bottom: 11%;
-
 }
 
 h1.segundo-carousel{
@@ -265,7 +265,7 @@ h1.segundo-carousel{
     margin-top: 5%;
 }
 
-img.tus-inversiones{
+img.imagen-segundo-carousel{
     width: 45%;
     height: auto;
     display: inline-block;
@@ -278,6 +278,14 @@ h1.tercer-carousel{
     display: inline-block;
     margin-left: 13%;
     margin-top: 5%;
+}
+
+img.imagen-tercer-carousel{
+    width: 20%;
+    height: auto;
+    display: inline;
+    margin-bottom: 11%; 
+    margin-left: 19%;
 }
 
 .main-2{
