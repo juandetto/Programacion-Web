@@ -243,7 +243,6 @@ button.carousel-control-prev{
 
 h1.primer-carousel{
     color:#0d6efd;
-    font-size: 45px;
     text-align: center;
     display: inline-block;
     margin-left: 13%;
@@ -302,7 +301,6 @@ img.imagen-tercer-carousel{
 }
 }
 
-
 .cards-plan{
     display: flex;
     position: absolute;
@@ -311,3 +309,15 @@ img.imagen-tercer-carousel{
     margin-left: -2.3%;
 }
 
+@media (max-width: 576px){
+    .cards-plan{
+        display: flex;
+        position: absolute;
+        width: 90%;
+        top: 405px;
+        margin-left: 1.5%;
+    }
+    .card{
+        margin-top: 15px;
+    }
+}
