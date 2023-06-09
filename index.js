@@ -8,6 +8,9 @@
 // }
 
 function agregarValores(){
+
+    valores = []
+    
     montoInversion = document.getElementById("monto-inversion")
     montoInversion = montoInversion.value/1
 
