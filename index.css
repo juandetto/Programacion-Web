@@ -132,7 +132,7 @@ li.nav-item a.dropdown-item:hover{
         margin: 0%;
         left: 0px;
         bottom: 0px;
-        top: 2150px;
+        top: 2290px;
         background-color: #333;
     }
 }
@@ -405,7 +405,7 @@ img.imagen-tercer-carousel{
 @media (max-width: 576px){
     .main-3{
         display: block;
-        height: 900px;
+        height: 1040px;
         top: 1250px;
     }
     .calculadora{
