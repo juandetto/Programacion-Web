@@ -260,7 +260,7 @@ img.imagen-primer-carousel{
 h1.segundo-carousel{
     color: #0d6efd;
     text-align: center;
-    display: inline-block;
+    display: inline;
     margin-left: 13%;
     margin-top: 5%;
 }
@@ -268,7 +268,7 @@ h1.segundo-carousel{
 img.imagen-segundo-carousel{
     width: 45%;
     height: auto;
-    display: inline-block;
+    display: inline;
     margin-bottom: 11%; 
 }
 
