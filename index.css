@@ -1,7 +1,7 @@
 /* nombreelemento{propiedad1: valor; propiedad2: valor;} */
 body{
     background-color: #eee;
-    height: 2000px;
+    height: auto;
 }
 
 .navbar{
@@ -118,7 +118,7 @@ li.nav-item a.dropdown-item:hover{
     height: 200px;
     width: 100%;
     margin: 0%;
-    top: 1800px;
+    top: 1340px;
     left: 0px;
     bottom: 0;
     background-color: #333;
@@ -127,12 +127,13 @@ li.nav-item a.dropdown-item:hover{
 @media (max-width: 576px){
     .footer{
         position: absolute;
-    height: 310px;
-    width: 100%;
-    margin: 0%;
-    left: 0px;
-    bottom: 0px;
-    background-color: #333;
+        height: 310px;
+        width: 100%;
+        margin: 0%;
+        left: 0px;
+        bottom: 0px;
+        top: 2150px;
+        background-color: #333;
     }
 }
 
@@ -319,5 +320,104 @@ img.imagen-tercer-carousel{
     }
     .card{
         margin-top: 15px;
+    }
+}
+
+.main-3{
+    background-color: #04265a;
+    display: flex;
+    width: 100%;
+    height: 440px;
+    position: absolute;
+    top: 840px;
+    left: 0px;
+}
+
+.titulo-calculadora{
+    display: inline-block;
+    position: relative;
+    margin-left: 6%;
+    margin-top: 20px;
+    color: #fff;
+    height: 40px;
+}
+
+.calculadora{
+    display: block;
+    position: relative;
+    margin-top: 4.4%;
+    margin-left: -22%;
+    align-content: center;
+}
+
+.campos-calculadora{
+    position: relative;
+    margin-top: 10%;
+}
+
+.boton-periodo-dropdown{
+    background-color: #fff;
+    border-color: #eee;
+}
+
+.boton-periodo-dropdown:hover{
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+a.dropdown-item:hover{
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+#ref-calculadora{
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 765px;
+}
+
+#boton-calcular{
+    margin-left: 33%;
+    margin-top: 10%;
+}
+
+#texto-rendimiento{
+    color: #fff;
+    display: block;
+    position: relative;
+    margin-left: 12%;
+    margin-top: 10%;
+}
+
+.ganancias{
+    display: block;
+    position: relative;
+    margin-top: 2.8%;
+    margin-left: 30%;
+}
+
+.campos-ganancias{
+    margin-top: 8%;
+}
+
+.texto-ganancias{
+    color: #fff;
+}
+
+@media (max-width: 576px){
+    .main-3{
+        display: block;
+        height: 880px;
+        top: 1250px;
+    }
+    .calculadora{
+        width: 80%;
+        margin-left: 9%;
+    }
+    .ganancias{
+        width: 80%;
+        margin-left: 9%;
+        margin-top: 15%;
     }
 }
