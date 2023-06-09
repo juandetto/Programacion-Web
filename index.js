@@ -10,7 +10,7 @@
 function agregarValores(){
 
     valores = []
-    
+
     montoInversion = document.getElementById("monto-inversion")
     montoInversion = montoInversion.value/1
 
@@ -131,13 +131,9 @@ function agregarValores(){
         alert("Elija un periodo valido para su inversion.")
     }
 
-    // console.log(valores)
-
     let gananciaFinPlazo = valores[0]*((1+(valores[1]/parseFloat(valores[2])))**valores[3])
 
     let gananciaNeta = (gananciaFinPlazo - montoInversion).toFixed(2)
-
-    // console.log(gananciaFinPlazo)
 
     let gananciaFinal = document.getElementById("ganancia-final")
 
@@ -227,7 +223,9 @@ function agregarValores(){
         else{
             gananciaAnualPromedio.textContent = (gananciaNeta/plazoInversion).toFixed(2)
         } 
-    }   
+    }
+    
+    console.log(valores)
 }
 
 
