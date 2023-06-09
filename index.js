@@ -128,15 +128,103 @@ function agregarValores(){
         alert("Elija un periodo valido para su inversion.")
     }
 
-    console.log(valores)
+    // console.log(valores)
 
     let gananciaFinPlazo = valores[0]*((1+(valores[1]/parseFloat(valores[2])))**valores[3])
 
-    console.log(gananciaFinPlazo)
+    let gananciaNeta = (gananciaFinPlazo - montoInversion).toFixed(2)
+
+    // console.log(gananciaFinPlazo)
 
     let gananciaFinal = document.getElementById("ganancia-final")
 
     gananciaFinal.textContent = gananciaFinPlazo.toFixed(2)
+
+    let gananciaTotal = document.getElementById("ganancia-total")
+
+    gananciaTotal.textContent = (gananciaFinPlazo - montoInversion).toFixed(2)
+
+    let gananciaDiariaPromedio = document.getElementById("ganancia-diaria-promedio")
+
+    let gananciaMensualPromedio = document.getElementById("ganancia-mensual-promedio")
+
+    let gananciaAnualPromedio = document.getElementById("ganancia-anual-promedio")
+
+    console.log((((gananciaFinPlazo-montoInversion)/plazoInversion)*30.42))
+
+    console.log(gananciaNeta)
+
+    if (seleccionPlazo === "dias"){
+        gananciaDiariaPromedio.textContent = (gananciaNeta/plazoInversion).toFixed(2)
+        
+        if (((gananciaNeta/plazoInversion)*30.42) > gananciaNeta){
+            gananciaMensualPromedio.textContent = gananciaNeta
+        }
+        else{
+        gananciaMensualPromedio.textContent = ((gananciaNeta/plazoInversion)*30.42).toFixed(2)
+        }
+
+        if (((gananciaNeta/plazoInversion)*365).toFixed(2) > gananciaNeta){
+            gananciaAnualPromedio.textContent = gananciaNeta
+        }
+        else{
+        gananciaAnualPromedio.textContent = ((gananciaNeta/plazoInversion)*365).toFixed(2)
+        }
+    }
+
+    else if (seleccionPlazo === "semanas"){
+        gananciaDiariaPromedio.textContent = ((gananciaNeta/plazoInversion)/7).toFixed(2)
+        
+        if (((gananciaNeta/plazoInversion)*4.34) > gananciaNeta){
+            gananciaMensualPromedio.textContent = gananciaNeta
+        }
+        else{
+            gananciaMensualPromedio.textContent = ((gananciaNeta/plazoInversion)*4.34).toFixed(2)
+        }
+
+        if (((gananciaNeta/plazoInversion)*52.14) > gananciaNeta){
+            gananciaAnualPromedio.textContent = gananciaNeta
+        }
+        else{
+            gananciaAnualPromedio.textContent = ((gananciaNeta/plazoInversion)*52.14).toFixed(2)
+        } 
+    }
+
+    else if (seleccionPlazo === "meses"){
+        gananciaDiariaPromedio.textContent = ((gananciaNeta/plazoInversion)/30.42).toFixed(2)
+        
+        if ((gananciaNeta/plazoInversion) > gananciaNeta){
+            gananciaMensualPromedio.textContent = gananciaNeta
+        }
+        else{
+            gananciaMensualPromedio.textContent = (gananciaNeta/plazoInversion).toFixed(2)
+        }
+
+        if (((gananciaNeta/plazoInversion)*12) > gananciaNeta){
+            gananciaAnualPromedio.textContent = gananciaNeta
+        }
+        else{
+            gananciaAnualPromedio.textContent = ((gananciaNeta/plazoInversion)*12).toFixed(2)
+        } 
+    }
+
+    else if (seleccionPlazo === "anios"){
+        gananciaDiariaPromedio.textContent = ((gananciaNeta/plazoInversion)/365).toFixed(2)
+        
+        if ((gananciaNeta/plazoInversion)/12 > gananciaNeta){
+            gananciaMensualPromedio.textContent = gananciaNeta
+        }
+        else{
+            gananciaMensualPromedio.textContent = ((gananciaNeta/plazoInversion)/12).toFixed(2)
+        }
+
+        if ((gananciaNeta/plazoInversion) > gananciaNeta){
+            gananciaAnualPromedio.textContent = gananciaNeta
+        }
+        else{
+            gananciaAnualPromedio.textContent = (gananciaNeta/plazoInversion).toFixed(2)
+        } 
+    }   
 }
 
 
