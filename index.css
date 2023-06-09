@@ -355,19 +355,9 @@ img.imagen-tercer-carousel{
     margin-top: 10%;
 }
 
-.boton-periodo-dropdown{
+.boton-plazo-dropdown{
     background-color: #fff;
     border-color: #eee;
-}
-
-.boton-periodo-dropdown:hover{
-    background-color: #0d6efd;
-    border-color: #0d6efd;
-}
-
-a.dropdown-item:hover{
-    background-color: #0d6efd;
-    color: #fff;
 }
 
 #ref-calculadora{
@@ -390,11 +380,18 @@ a.dropdown-item:hover{
     margin-top: 10%;
 }
 
-.ganancias{
+.ganancias1{
     display: block;
     position: relative;
-    margin-top: 2.8%;
-    margin-left: 30%;
+    margin-top: 6.5%;
+    margin-left: 20%;
+}
+
+.ganancias2{
+    display: block;
+    position: relative;
+    margin-top: 6.5%;
+    margin-left: 7%;
 }
 
 .campos-ganancias{
@@ -408,18 +405,30 @@ a.dropdown-item:hover{
 @media (max-width: 576px){
     .main-3{
         display: block;
-        height: 880px;
+        height: 900px;
         top: 1250px;
     }
     .calculadora{
         width: 80%;
         margin-left: 9%;
     }
-    .ganancias{
+
+    #boton-calcular{
+        margin-left: 37%;
+        margin-top: 10%;
+    }
+    .ganancias1{
         width: 80%;
         margin-left: 9%;
         margin-top: 15%;
     }
+
+    .ganancias2{
+        width: 80%;
+        margin-left: 9%;
+        margin-top: 8%;
+    }
+
     #ref-calculadora{
         display: block;
         height: 1px;

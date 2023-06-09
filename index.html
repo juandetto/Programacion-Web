@@ -127,50 +127,59 @@
           <input type="text" id="tna" class="form-control" placeholder="Tasa Nominal Anual" aria-label="Tasa Nominal Anual" aria-describedby="basic-addon2">
         </div>
         <div class="input-group mb-3 campos-calculadora">
-          <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Plazo de inversion"> 
-          <button class="boton-periodo-dropdown btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Periodo</button>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item">Días</a></li>
-            <li><a class="dropdown-item">Semanas</a></li>
-            <li><a class="dropdown-item">Meses</a></li>
-            <li><a class="dropdown-item">Años</a></li>
-          </ul>
+          <input id="plazo-inversion" type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Plazo">
+          <select id="seleccion-plazo" class="form-select boton-plazo-dropdown" aria-label="Plazo">
+            <option selected>Período</option>
+            <option value="dias">Días</option>
+            <option value="semanas">Semanas</option>
+            <option value="meses">Meses</option>
+            <option value="anios">Años</option>
+          </select>
         </div>
-        <select id="periodo-cap"class="form-select campos-calculadora" aria-label="Default select example">
+        
+        <select id="periodo-capitalizacion"class="form-select campos-calculadora" aria-label="Default select example">
           <option selected>Periodo de capitalizacion</option>
-          <option value="1">Diario</option>
-          <option value="2">Semanal</option>
-          <option value="3">Mensual</option>
-          <option value="4">Bimestral</option>
-          <option value="5">Trimestral</option>
-          <option value="6">Semestral</option>
-          <option value="7">Anual</option>
+          <option value="diario">Diario</option>
+          <option value="semanal">Semanal</option>
+          <option value="mensual">Mensual</option>
+          <option value="trimestral">Trimestral</option>
+          <option value="semestral">Semestral</option>
+          <option value="anual">Anual</option>
       </select>
       <button type="button" id="boton-calcular" class="campos-calculadora btn btn-primary">Calcular</button>
       </div>
-      <div class="ganancias">
+      <div class="ganancias1">
         <div class="campos-ganancias">
-          <p class="texto-ganancias">Ganancia diaria:</p>
+          <p class="texto-ganancias">Ganancia diaria promedio:</p>
           <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">$</span>
-            <input type="text" class="form-control" placeholder="0" aria-label="Disabled input example" disabled>
+            <span id="ganancia-diaria-promedio" class="form-control">0</span>
           </div>
         </div>
         <div class="campos-ganancias">
-          <p class="texto-ganancias">Ganancia anual:</p>
+          <p class="texto-ganancias">Ganancia mensual promedio:</p>
           <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">$</span>
-            <input type="text" class="form-control" placeholder="0" aria-label="Disabled input example" disabled>
-          </div>
-        </div>
-        <div class="campos-ganancias">
-          <p class="texto-ganancias">Ganancia a final del plazo:</p>
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">$</span>
-            <input type="text" class="form-control" placeholder="0" aria-label="Disabled input example" disabled>
+            <span id="ganancia-mensual-promedio" class="form-control">0</span>
           </div>
         </div>
       </div>
+      <div class="ganancias2">
+          <div class="campos-ganancias">
+            <p class="texto-ganancias">Ganancia anual promedio:</p>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">$</span>
+              <span id="ganancia-anual-promedio" class="form-control">0</span>
+            </div>
+          </div>
+          <div class="campos-ganancias">
+            <p class="texto-ganancias">Ganancia a final del plazo:</p>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">$</span>
+              <span id="ganancia-final" class="form-control">0</span>
+            </div>
+          </div>
+        </div>
     </div>
 
     <footer>
@@ -202,6 +211,7 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     
