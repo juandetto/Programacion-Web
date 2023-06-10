@@ -149,7 +149,9 @@ function agregarValores(){
 
     let gananciaAnualPromedio = document.getElementById("ganancia-anual-promedio")
 
-    console.log((((gananciaFinPlazo-montoInversion)/plazoInversion)*30.42))
+    console.log(((gananciaNeta/plazoInversion)*30.42))
+
+    console.log(((gananciaNeta/plazoInversion)*365))
 
     console.log(gananciaNeta)
 
@@ -163,7 +165,7 @@ function agregarValores(){
         gananciaMensualPromedio.textContent = ((gananciaNeta/plazoInversion)*30.42).toFixed(2)
         }
 
-        if (((gananciaNeta/plazoInversion)*365).toFixed(2) > gananciaNeta){
+        if (((gananciaNeta/plazoInversion)*365) > gananciaNeta){
             gananciaAnualPromedio.textContent = gananciaNeta
         }
         else{
@@ -223,6 +225,9 @@ function agregarValores(){
         else{
             gananciaAnualPromedio.textContent = (gananciaNeta/plazoInversion).toFixed(2)
         } 
+    }
+    else{
+        alert("Elija un periodo valido para su inversion")
     }
     
     console.log(valores)
